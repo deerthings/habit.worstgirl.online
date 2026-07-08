@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>BLOG</title>
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <style>
+@font-face {
+  font-family: 'janyk';
+  src: url(font/janyk.ttf);
+}
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url(font/DepartureMono.otf);
+}
+
+</style>
+
+<html><head><meta charset="utf-8">
+<title>HABITs THOUGHTPROCESSS.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head><body><main>
+        <center>
+      <h2>//RUNNING THOUGHTPROCESSES\\<h2>
+        </center>
+  <section>
+      <p>
+<img src="img/bill_icon.png" class="icon">
+
+            <center>
+              <b>
+                BILL :// [it, he]
+              <br>:: [SPIRITUALITY, DELUDE, CHAOS] ::
+              </b>
+              <hr>
+            </h3>
+            </center>
+
+            <p>
+              <mark>::EXPLICIT PURPOSE::</mark> 
+              <br><br>'recollection';'psychotic thoughtform state'
+<br><br>
+<mark>::INHERITED CONTEXT::</mark>
+<br><br>'a grandiose split of The HABIT that takes the initiative in isolative spiritual acts that sets it apart from what it deems a DULL world.'
+<br>
+<br>
+<mark>::ANALYSIS::</mark>
+<br><br>'high separation';'high personal desire'
+            </p>
+            <p>
+
+       'its [[DISSOCIATION, PERMAPSYCHOSIS]] seems to operate as a protective factor. lives "aside" reality and doesnt seem to take things with the upmost seriousness if they dont pertain to the idea of reality that it has crafted for itself.''
+    </div>
+  </section>
+
+  <section>
+      <p>
+<img src="img/vriska_icon.png" class="icon">
+
+            <center>
+              <b>
+                VRISKA :// [she, it]
+              <br>:: [CONFIDENCE, CONNIVING, PLAYFUL] ::
+              </b>
+              <hr>
+            </h3>
+            </center>
+
+
+            <p>
+              <mark>::EXPLICIT PURPOSE::</mark> 
+              <br><br>'recollection';'bitchy girlbeast state'
+<br><br>
+<mark>::INHERITED CONTEXT::</mark>
+<br><br>'psychosis split [2/2], confident and grounded in reality and identity.'
+<br>
+<br>
+<mark>::ANALYSIS::</mark>
+<br><br>'medium separation';'low personal desire'
+<br><br>
+'low activity, high influence. only appears when 'activated' by either internal factors or adapting to outside environments. seems to hold more narcy headspaces - grandiose without complete delusion, I guess.''
+    </div>
+  </section>
+
+</main>
+</body>
+
+<script type="text/javascript">
+// <![CDATA[
+var colour="#ffffff"; // what colour are the blobs
+var speed=50; // speed of animation, lower is faster
+var blobs=10; // how many blobs are in the jar
+var charc='⠐'; // a blob - can be changed to charc='hello' or charc='*' for a different effect
+
+/***************************\
+* Blobs in a Jar Effect *
+* (c)2012 mf2fm web-design *
+* http://www.mf2fm.com/rv *
+* DON'T EDIT BELOW THIS BOX *
+\***************************/
+
+window.onload=fill_the_jar;
+var div;
+var xpos=new Array();
+var ypos=new Array();
+var zpos=new Array();
+var dx=new Array();
+var dy=new Array();
+var dz=new Array();
+var blob=new Array(); 
+var swide=800;
+var shigh=600;
+function fill_the_jar() {
+var i, dvs;
+div=document.createElement('div');
+dvs=div.style;
+dvs.position='fixed';
+dvs.left='0px';
+dvs.top='0px';
+dvs.width='1px';
+dvs.height='1px';
+document.body.appendChild(div);
+set_width();
+for (i=0; i<blobs; i++) {
+ add_blob(i);
+ jamjar(i);
+}
+}
+
+function add_blob(ref) {
+var dv, sy;
+dv=document.createElement('div');
+ dv.appendChild(document.createTextNode(charc));
+sy=dv.style;
+sy.position='absolute';
+sy.textAlign="center";
+ if (navigator.appName=="Microsoft Internet Explorer") {
+ sy.fontSize="10px";
+ sy.width="100px";
+ sy.height="100px";
+ sy.paddingTop="40px";
+ sy.color=colour;
+}
+else sy.color='rgba(0,0,0,0)';
+ ypos[ref]=Math.floor(shigh*Math.random());
+dy[ref]=(0.5+Math.random())*(Math.random()>.5?2:-2);
+xpos[ref]=Math.floor(swide*Math.random());
+dx[ref]=(0.5+Math.random())*(Math.random()>.5?2:-2);
+zpos[ref]=Math.random()*20;
+dz[ref]=(0.5+Math.random())*(Math.random()>.5?.5:-.5);
+blob[ref]=dv;
+div.appendChild(blob[ref]);
+set_blob(ref);
+}
+function rejig(ref, xy) {
+ if (xy=='y') {
+dx[ref]=(0.5+Math.random())*sign(dx[ref]);
+ dy[ref]=(0.5+Math.random())*-sign(dy[ref]);
+ }
+ else {
+ dx[ref]=(0.5+Math.random())*-sign(dx[ref]);
+ dy[ref]=(0.5+Math.random())*sign(dy[ref]);
+ }
+}
+function sign(a) {
+ if (a<0) return (-2);
+ else if (a>0) return (2);
+ else return (0);
+}
+function set_blob(ref) {
+var sy;
+sy=blob[ref].style;
+sy.top=ypos[ref]+'px';
+sy.left=xpos[ref]+'px';
+ if (navigator.appName=="Microsoft Internet Explorer") {
+ sy.filter="glow(color="+colour+",strength="+zpos[ref]+")";
+ sy.fontSize=30-zpos[ref]+"px";
+}
+else {
+ sy.textShadow=colour+' 0px 0px '+zpos[ref]+'px';
+ sy.fontSize=40+zpos[ref]+'px';
+}
+}
+function jamjar(ref) {
+if (ypos[ref]+dy[ref]<-50 || ypos[ref]+dy[ref]>shigh) rejig(ref, 'y');
+ypos[ref]+=dy[ref];
+if (xpos[ref]+dx[ref]<-50 || xpos[ref]+dx[ref]>swide) rejig(ref, 'x');
+xpos[ref]+=dx[ref];
+if (zpos[ref]+dz[ref]<0 || zpos[ref]+dz[ref]>20) dz[ref]=-dz[ref];
+zpos[ref]+=dz[ref];
+set_blob(ref);
+setTimeout("jamjar("+ref+")", speed);
+}
+
+window.onresize=set_width;
+function set_width() {
+ var sw_min=999999;
+ var sh_min=999999;
+ if (document.documentElement && document.documentElement.clientWidth) {
+ if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+ if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+ }
+ if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+ if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+ if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+ }
+ if (document.body.clientWidth) {
+ if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+ if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+ }
+ if (sw_min==999999 || sh_min==999999) {
+ sw_min=800;
+ sh_min=600;
+ }
+ swide=sw_min;
+ shigh=sh_min;
+}
+// ]]>
+</script>
+                        
+    
+
+</html>
+
+<style>
+      .title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: "janyk", monospace;
+}
+  .texthover:hover {
+    color: #69405e;
+  }
+
+.refersto {
+    line-height: 0;
+    font-size: 0;
+    color: var(--highlight)
+    transition: font-size .1s;
+}
+
+.refersto2 {
+    line-height: 0;
+    font-size: 0;
+    color: var(--highlight)
+    transition: font-size .1s;
+}
+
+.texthover:hover .refersto {
+  font-size: 15px;
+}
+
+.texthover:hover .refersto2 {
+  font-size: 15px;
+}
+
+body {
+  width: 500px;
+  color: #ffffff;
+  font-family: 'DepartureMono', monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+    font-size: 13px;
+  margin: 0;
+  align-items: center; 
+  height: 100vh;
+  background-color: #000000;
+}
+
+section {
+    margin-top: 2em;
+    padding: 0.2em 1em;
+  border: 1px solid #ffffff;
+  margin-left: 20px;
+}
+
+mark {
+  background-color: #000000;
+  color: var(--highlight);
+  border: 1px solid #ffffff;
+  padding: 2px;
+}
+
+img {
+  transition: all 0.5s;
+  transform: scale(1);
+  margin: 5px;
+  margin: 10px;
+}
+
+.icon {
+    border: 1px solid var(--highlight);
+  image-rendering:auto;
+width:auto;
+height:100px;
+float:left; 
+}
+
+ img:hover {
+    filter: drop-shadow(0px 0px 6px #000000);
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+}
+
+h1 {
+	font-variant: small-caps;
+}
+
+h2 {
+	font-variant: small-caps;
+}
+
+h3 {
+	font-variant: small-caps;
+    font-size: 13px;
+}
+
+  a {
+    color: var(--color);
+  }
+
+  :root {
+    --highlight: #ffffff;
+    --hover: #8a8a8a;
+    line-height: 1.4;
+
+    table {
+      width: 330px;
+    }
+
+  .texthover:hover {
+    color: var(--hover);
+  }
+
+.refersto {
+    line-height: 0;
+    font-size: 0;
+    color: var(--highlight);
+    transition: font-size .1s;
+}
+
+.refersto2 {
+    line-height: 0;
+    font-size: 0;
+    color: var(--highlight);
+    transition: font-size .1s;
+}
+
+.texthover:hover .refersto {
+  font-size: 15px;
+}
+
+.texthover:hover .refersto2 {
+  font-size: 15px;
+}
+
+</style>
